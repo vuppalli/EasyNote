@@ -1,5 +1,7 @@
 # College-NoteTaker
 
+(add picture of app)
+
 ## Model
 
 ### Summarizer
