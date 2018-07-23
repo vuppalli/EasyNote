@@ -7,29 +7,29 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class notesSummary: UIViewController {
 
+    @IBOutlet weak var summaryField: UITextView!
+    var ref: DatabaseReference?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        ref = Database.database().reference()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        summaryField.text = noteSumm
+        self.navigationController?.title = noteName
     }
-    */
 
+    @IBAction func savePressed(_ sender: Any) {
+        let first = ref?.child("Note Info").child("Note: " + noteName)
+        first?.child("Summary").setValue(summaryField.text)
+    }
 }

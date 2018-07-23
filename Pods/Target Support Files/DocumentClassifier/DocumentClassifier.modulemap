@@ -1,0 +1,6 @@
+framework module DocumentClassifier {
+  umbrella header "DocumentClassifier-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FCF17ED8DFAC8AEA7DC95CB /* Pods_NoteTakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C38E67AAC94D91E7367701B /* Pods_NoteTakerTests.framework */; };
+		924C08EA2100B4AC00C16DF9 /* Summarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C08E92100B4AC00C16DF9 /* Summarizer.swift */; };
+		924C08F021026DD900C16DF9 /* notesSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C08EF21026DD900C16DF9 /* notesSummary.swift */; };
 		92AEFD8620F3E508001A6D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AEFD8520F3E508001A6D3C /* AppDelegate.swift */; };
 		92AEFD8820F3E508001A6D3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AEFD8720F3E508001A6D3C /* ViewController.swift */; };
 		92AEFD8B20F3E508001A6D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AEFD8920F3E508001A6D3C /* Main.storyboard */; };
@@ -14,6 +17,22 @@
 		92AEFD9020F3E509001A6D3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AEFD8E20F3E509001A6D3C /* LaunchScreen.storyboard */; };
 		92AEFD9B20F3E50A001A6D3C /* NoteTakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AEFD9A20F3E50A001A6D3C /* NoteTakerTests.swift */; };
 		92AEFDA620F3E50A001A6D3C /* NoteTakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AEFDA520F3E50A001A6D3C /* NoteTakerUITests.swift */; };
+		92AEFDB820F40C1F001A6D3C /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AEFDB720F40C1F001A6D3C /* TableCell.swift */; };
+		92AEFDBA20F40C6B001A6D3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AEFDB920F40C6B001A6D3C /* Constants.swift */; };
+		92AEFDBC20F420D1001A6D3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92AEFDBB20F420D1001A6D3C /* GoogleService-Info.plist */; };
+		92AEFE0420F5455A001A6D3C /* EditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AEFE0320F5455A001A6D3C /* EditController.swift */; };
+		92DE5D4D20F8CCE2008021F3 /* ArticleTextPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE5D4C20F8CCE2008021F3 /* ArticleTextPopUpViewController.swift */; };
+		92DE5D4F20F8CD5C008021F3 /* articleSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE5D4E20F8CD5C008021F3 /* articleSummaryViewController.swift */; };
+		92EAF73220FE542C0073EBDC /* ClassificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EAF73120FE542C0073EBDC /* ClassificationService.swift */; };
+		92EAF73420FE548B0073EBDC /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EAF73320FE548B0073EBDC /* Sentiment.swift */; };
+		92EAF73620FE5D310073EBDC /* SentimentPolarityNoteTaker.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92EAF73520FE5D310073EBDC /* SentimentPolarityNoteTaker.mlmodel */; };
+		92EAF73820FE9E4A0073EBDC /* DocumentClassification.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92EAF73720FE9E4A0073EBDC /* DocumentClassification.mlmodel */; };
+		92EAF73A20FE9E5D0073EBDC /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EAF73920FE9E5D0073EBDC /* Classification.swift */; };
+		92EAF73E20FE9F4A0073EBDC /* DocumentClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EAF73D20FE9F4A0073EBDC /* DocumentClassifier.swift */; };
+		92F574F720F7CCCA004EB09C /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F574F620F7CCCA004EB09C /* PopUpViewController.swift */; };
+		92F574F920F7DCE8004EB09C /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F574F820F7DCE8004EB09C /* AddController.swift */; };
+		EE770EC29D1DEF9C6D5D1086 /* Pods_NoteTaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EFAE40E272C1BCD6416DE1 /* Pods_NoteTaker.framework */; };
+		F42A6E0CE895D620EA30D394 /* Pods_NoteTakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9C5DA2C3964E1471C8560F /* Pods_NoteTakerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +53,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C38E67AAC94D91E7367701B /* Pods_NoteTakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteTakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F9C5DA2C3964E1471C8560F /* Pods_NoteTakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteTakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D22376545211F6DC5EA7CE /* Pods-NoteTakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteTakerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteTakerTests/Pods-NoteTakerTests.release.xcconfig"; sourceTree = "<group>"; };
+		62EFAE40E272C1BCD6416DE1 /* Pods_NoteTaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteTaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7611240CE013AF7B026404A0 /* Pods-NoteTakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteTakerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteTakerTests/Pods-NoteTakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DE0AF8C01412AAE3F801B13 /* Pods-NoteTaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteTaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteTaker/Pods-NoteTaker.debug.xcconfig"; sourceTree = "<group>"; };
+		924C08E92100B4AC00C16DF9 /* Summarizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summarizer.swift; sourceTree = "<group>"; };
+		924C08EF21026DD900C16DF9 /* notesSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notesSummary.swift; sourceTree = "<group>"; };
 		92AEFD8220F3E508001A6D3C /* NoteTaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteTaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AEFD8520F3E508001A6D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92AEFD8720F3E508001A6D3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +74,23 @@
 		92AEFDA120F3E50A001A6D3C /* NoteTakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteTakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AEFDA520F3E50A001A6D3C /* NoteTakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTakerUITests.swift; sourceTree = "<group>"; };
 		92AEFDA720F3E50A001A6D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92AEFDB720F40C1F001A6D3C /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		92AEFDB920F40C6B001A6D3C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		92AEFDBB20F420D1001A6D3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92AEFE0320F5455A001A6D3C /* EditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditController.swift; sourceTree = "<group>"; };
+		92DE5D4C20F8CCE2008021F3 /* ArticleTextPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTextPopUpViewController.swift; sourceTree = "<group>"; };
+		92DE5D4E20F8CD5C008021F3 /* articleSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = articleSummaryViewController.swift; sourceTree = "<group>"; };
+		92EAF73120FE542C0073EBDC /* ClassificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationService.swift; sourceTree = "<group>"; };
+		92EAF73320FE548B0073EBDC /* Sentiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
+		92EAF73520FE5D310073EBDC /* SentimentPolarityNoteTaker.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SentimentPolarityNoteTaker.mlmodel; sourceTree = "<group>"; };
+		92EAF73720FE9E4A0073EBDC /* DocumentClassification.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DocumentClassification.mlmodel; sourceTree = "<group>"; };
+		92EAF73920FE9E5D0073EBDC /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		92EAF73D20FE9F4A0073EBDC /* DocumentClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentClassifier.swift; sourceTree = "<group>"; };
+		92F574F620F7CCCA004EB09C /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		92F574F820F7DCE8004EB09C /* AddController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		974C48F40F21D62FC05F1527 /* Pods-NoteTakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteTakerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteTakerUITests/Pods-NoteTakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA0A705AB731550D148FBA51 /* Pods-NoteTakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteTakerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteTakerUITests/Pods-NoteTakerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC11B9D016E01EEA3B4AAE76 /* Pods-NoteTaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteTaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteTaker/Pods-NoteTaker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE770EC29D1DEF9C6D5D1086 /* Pods_NoteTaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCF17ED8DFAC8AEA7DC95CB /* Pods_NoteTakerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +114,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42A6E0CE895D620EA30D394 /* Pods_NoteTakerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FCF682BA158D6B8EF563444 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62EFAE40E272C1BCD6416DE1 /* Pods_NoteTaker.framework */,
+				0C38E67AAC94D91E7367701B /* Pods_NoteTakerTests.framework */,
+				0F9C5DA2C3964E1471C8560F /* Pods_NoteTakerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F72EEDDFC820F18B5532162 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DE0AF8C01412AAE3F801B13 /* Pods-NoteTaker.debug.xcconfig */,
+				FC11B9D016E01EEA3B4AAE76 /* Pods-NoteTaker.release.xcconfig */,
+				7611240CE013AF7B026404A0 /* Pods-NoteTakerTests.debug.xcconfig */,
+				57D22376545211F6DC5EA7CE /* Pods-NoteTakerTests.release.xcconfig */,
+				974C48F40F21D62FC05F1527 /* Pods-NoteTakerUITests.debug.xcconfig */,
+				EA0A705AB731550D148FBA51 /* Pods-NoteTakerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		92AEFD7920F3E508001A6D3C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +151,8 @@
 				92AEFD9920F3E50A001A6D3C /* NoteTakerTests */,
 				92AEFDA420F3E50A001A6D3C /* NoteTakerUITests */,
 				92AEFD8320F3E508001A6D3C /* Products */,
+				6F72EEDDFC820F18B5532162 /* Pods */,
+				4FCF682BA158D6B8EF563444 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +169,28 @@
 		92AEFD8420F3E508001A6D3C /* NoteTaker */ = {
 			isa = PBXGroup;
 			children = (
+				92EAF73720FE9E4A0073EBDC /* DocumentClassification.mlmodel */,
+				92F574F820F7DCE8004EB09C /* AddController.swift */,
 				92AEFD8520F3E508001A6D3C /* AppDelegate.swift */,
+				92AEFDB720F40C1F001A6D3C /* TableCell.swift */,
 				92AEFD8720F3E508001A6D3C /* ViewController.swift */,
+				92AEFDB920F40C6B001A6D3C /* Constants.swift */,
 				92AEFD8920F3E508001A6D3C /* Main.storyboard */,
+				92EAF73120FE542C0073EBDC /* ClassificationService.swift */,
+				92EAF73D20FE9F4A0073EBDC /* DocumentClassifier.swift */,
+				924C08EF21026DD900C16DF9 /* notesSummary.swift */,
+				92EAF73320FE548B0073EBDC /* Sentiment.swift */,
+				92DE5D4E20F8CD5C008021F3 /* articleSummaryViewController.swift */,
+				92EAF73920FE9E5D0073EBDC /* Classification.swift */,
+				92DE5D4C20F8CCE2008021F3 /* ArticleTextPopUpViewController.swift */,
+				92F574F620F7CCCA004EB09C /* PopUpViewController.swift */,
+				924C08E92100B4AC00C16DF9 /* Summarizer.swift */,
+				92AEFE0320F5455A001A6D3C /* EditController.swift */,
+				92EAF73520FE5D310073EBDC /* SentimentPolarityNoteTaker.mlmodel */,
 				92AEFD8C20F3E509001A6D3C /* Assets.xcassets */,
 				92AEFD8E20F3E509001A6D3C /* LaunchScreen.storyboard */,
 				92AEFD9120F3E509001A6D3C /* Info.plist */,
+				92AEFDBB20F420D1001A6D3C /* GoogleService-Info.plist */,
 			);
 			path = NoteTaker;
 			sourceTree = "<group>";
@@ -132,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92AEFDAA20F3E50A001A6D3C /* Build configuration list for PBXNativeTarget "NoteTaker" */;
 			buildPhases = (
+				671D275006FC60B62F2B0BDF /* [CP] Check Pods Manifest.lock */,
 				92AEFD7E20F3E508001A6D3C /* Sources */,
 				92AEFD7F20F3E508001A6D3C /* Frameworks */,
 				92AEFD8020F3E508001A6D3C /* Resources */,
+				26FDC9C0DD38C48147FE610D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92AEFDAD20F3E50A001A6D3C /* Build configuration list for PBXNativeTarget "NoteTakerTests" */;
 			buildPhases = (
+				25F07B6A0BC8BB29BC1E3DFB /* [CP] Check Pods Manifest.lock */,
 				92AEFD9220F3E50A001A6D3C /* Sources */,
 				92AEFD9320F3E50A001A6D3C /* Frameworks */,
 				92AEFD9420F3E50A001A6D3C /* Resources */,
@@ -167,6 +258,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92AEFDB020F3E50A001A6D3C /* Build configuration list for PBXNativeTarget "NoteTakerUITests" */;
 			buildPhases = (
+				A61FC9E5332D20B583DA5889 /* [CP] Check Pods Manifest.lock */,
 				92AEFD9D20F3E50A001A6D3C /* Sources */,
 				92AEFD9E20F3E50A001A6D3C /* Frameworks */,
 				92AEFD9F20F3E50A001A6D3C /* Resources */,
@@ -230,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92AEFD9020F3E509001A6D3C /* LaunchScreen.storyboard in Resources */,
+				92AEFDBC20F420D1001A6D3C /* GoogleService-Info.plist in Resources */,
 				92AEFD8D20F3E509001A6D3C /* Assets.xcassets in Resources */,
 				92AEFD8B20F3E508001A6D3C /* Main.storyboard in Resources */,
 			);
@@ -251,13 +344,113 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25F07B6A0BC8BB29BC1E3DFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoteTakerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26FDC9C0DD38C48147FE610D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NoteTaker/Pods-NoteTaker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DocumentClassifier/DocumentClassifier.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Reductio/Reductio.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DocumentClassifier.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reductio.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoteTaker/Pods-NoteTaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		671D275006FC60B62F2B0BDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoteTaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A61FC9E5332D20B583DA5889 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoteTakerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92AEFD7E20F3E508001A6D3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AEFDB820F40C1F001A6D3C /* TableCell.swift in Sources */,
+				92AEFE0420F5455A001A6D3C /* EditController.swift in Sources */,
+				92EAF73620FE5D310073EBDC /* SentimentPolarityNoteTaker.mlmodel in Sources */,
+				92F574F720F7CCCA004EB09C /* PopUpViewController.swift in Sources */,
+				92EAF73E20FE9F4A0073EBDC /* DocumentClassifier.swift in Sources */,
+				92EAF73420FE548B0073EBDC /* Sentiment.swift in Sources */,
+				92DE5D4D20F8CCE2008021F3 /* ArticleTextPopUpViewController.swift in Sources */,
+				92EAF73820FE9E4A0073EBDC /* DocumentClassification.mlmodel in Sources */,
 				92AEFD8820F3E508001A6D3C /* ViewController.swift in Sources */,
 				92AEFD8620F3E508001A6D3C /* AppDelegate.swift in Sources */,
+				924C08F021026DD900C16DF9 /* notesSummary.swift in Sources */,
+				924C08EA2100B4AC00C16DF9 /* Summarizer.swift in Sources */,
+				92EAF73A20FE9E5D0073EBDC /* Classification.swift in Sources */,
+				92F574F920F7DCE8004EB09C /* AddController.swift in Sources */,
+				92DE5D4F20F8CD5C008021F3 /* articleSummaryViewController.swift in Sources */,
+				92AEFDBA20F40C6B001A6D3C /* Constants.swift in Sources */,
+				92EAF73220FE542C0073EBDC /* ClassificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +621,7 @@
 		};
 		92AEFDAB20F3E50A001A6D3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE0AF8C01412AAE3F801B13 /* Pods-NoteTaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -436,7 +630,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uscgSmartApplicator.NoteTaker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Vismita.NoteTaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,6 +639,7 @@
 		};
 		92AEFDAC20F3E50A001A6D3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC11B9D016E01EEA3B4AAE76 /* Pods-NoteTaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,7 +648,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uscgSmartApplicator.NoteTaker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Vismita.NoteTaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,6 +657,7 @@
 		};
 		92AEFDAE20F3E50A001A6D3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7611240CE013AF7B026404A0 /* Pods-NoteTakerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +678,7 @@
 		};
 		92AEFDAF20F3E50A001A6D3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D22376545211F6DC5EA7CE /* Pods-NoteTakerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +699,7 @@
 		};
 		92AEFDB120F3E50A001A6D3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 974C48F40F21D62FC05F1527 /* Pods-NoteTakerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +719,7 @@
 		};
 		92AEFDB220F3E50A001A6D3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA0A705AB731550D148FBA51 /* Pods-NoteTakerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -9,27 +9,43 @@
 import UIKit
 
 class articleSummaryViewController: UIViewController {
-
+    
+    @IBOutlet weak var articleSummaryField: UITextView!
+    @IBOutlet weak var sentimentLabel: UILabel!
+    @IBOutlet weak var topicLabel: UILabel!
+    
+    let pasteboard = UIPasteboard.general
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.isToolbarHidden = true
+        sentimentLabel.backgroundColor = sentColor
+        sentimentLabel.text = sentResult + " " + sentEmoji
+        topicLabel.text = classificationLabel
+        topicLabel.backgroundColor = classificationColor
+        if (classificationColor == UIColor.brown){
+            topicLabel.textColor = UIColor.white
+        }
+        articleSummaryField.text = summarizedContent
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-    */
-
+    
+    @IBAction func showArticleScript(_ sender: Any) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popUpArticleText") as! ArticleTextPopUpViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+    }
+    
+    @IBAction func copyToClipboard(_ sender: Any) {
+        pasteboard.string = articleSummaryField.text
+    }
+    
 }

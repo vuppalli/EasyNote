@@ -7,18 +7,44 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class TableCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var editButton: UIButton!
+    @IBOutlet weak var summaryButton: UIButton!
+    
+    var ref: DatabaseReference?
+    var handleNoteName: DatabaseHandle?
+    var handleNoteBody: DatabaseHandle?
+    
+    let summarizer = Summarizer()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        ref = Database.database().reference()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-
+    
+    @IBAction func editPressed(_ sender: Any) {
+        noteNum = editButton.tag
+        noteName = notesArray[noteNum].name
+        handleNoteBody = ref?.child("Note Info").child("Note: " + noteName).child("Body").observe(.value, with: {(snapshot) in
+            noteBody = snapshot.value as? String ?? ""
+        })
+        self.ref?.removeAllObservers()
+    }
+    
+    @IBAction func summaryPressed(_ sender: Any) {
+        noteNum = editButton.tag
+        noteName = notesArray[noteNum].name
+        handleNoteBody = ref?.child("Note Info").child("Note: " + noteName).child("Body").observe(.value, with: {(snapshot) in
+            noteBody = snapshot.value as? String ?? ""
+        })
+        self.ref?.removeAllObservers()
+    }
 }
