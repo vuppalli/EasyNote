@@ -11,6 +11,8 @@ Article Summary for [this](https://www.nytimes.com/2018/07/14/world/europe/uk-tr
 
 ## Model
 
+### Running the Model
+
 ### Features
 
 ## Summarizer
@@ -36,6 +38,8 @@ open College-NoteTaker.xcworkspace/
 - [DocumentClassifier](https://github.com/toddkramer/DocumentClassifier)
 
 ## Creator
+
+[Vismita Uppalli](https://github.com/vuppalli)
 
 ## Note
 
