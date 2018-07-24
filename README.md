@@ -6,7 +6,8 @@ An application that allows easier and more efficient note taking by:
 - having a capability to summarize text for article and note summaries
 
 Article Summary for [this](https://www.nytimes.com/2018/07/14/world/europe/uk-trump-scotland-golf.html?action=click&module=TrendingGrid&region=TrendingTop&pgtype=collection) NYTimes article:
-<img width="300" src="SummaryOfArticle.png">
+
+<img src="SummaryOfArticle.png" width="300">
 
 ## Model
 
