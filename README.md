@@ -1,9 +1,9 @@
 # College-NoteTaker
 
 An application that allows easier and more efficient note taking by:
-- allowing speech to text for faster note-taking and ease in writing
-- ability to add articles and fully interpret through sentiment analysis and subject classification
-- having a capability to summarize text for article and note summaries
+- allowing ***speech to text*** for faster note-taking and ease in writing
+- ability to add articles and fully interpret through ***sentiment analysis*** and ***subject classification***
+- having a capability to ***summarize*** text for article and note summaries
 
 Article Summary for [this NYTimes article](https://www.nytimes.com/2018/07/14/world/europe/uk-trump-scotland-golf.html?action=click&module=TrendingGrid&region=TrendingTop&pgtype=collection):
 
