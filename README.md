@@ -6,7 +6,7 @@ An application that allows easier and more efficient note taking by:
 - having a capability to summarize text for article and note summaries
 
 <p align="center">
-  <img width="460" height="300" src="SummaryOfArticle.png">
+  <img width="300" src="SummaryOfArticle.png">
 </p>
 
 ## Model
