@@ -11,6 +11,8 @@ Article Summary for [this](https://www.nytimes.com/2018/07/14/world/europe/uk-tr
 
 ## Model
 
+Scikit-Learn's [Pipeline](http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html) was created using a [Dict Vectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.DictVectorizer.html) and a [Linear SVM](http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html) and was then converted into the [CoreML Model](https://developer.apple.com/documentation/coreml) using the [coremltools](https://developer.apple.com/documentation/coreml/converting_trained_models_to_core_ml) python package. This classifier was used to distinguish between positive and negative phrases with the **best test score = 0.841726618705036** and was trained with the [Epinions](http://boston.lti.cs.cmu.edu/classes/95-865-K/HW/HW3/) set.
+
 ### Running the Model
 
 ### Features
@@ -32,7 +34,7 @@ open College-NoteTaker.xcworkspace/
 ## Built With
 - [Firebase](https://firebase.google.com/)
 - [SiriKit](https://developer.apple.com/sirikit/)
-- [CoreML Framework](https://developer.apple.com/sirikit/)
+- [CoreML Framework](https://developer.apple.com/documentation/coreml)
 - [Scikit-Learn](http://scikit-learn.org/stable/)
 - [SwiftSoup](https://github.com/scinfu/SwiftSoup)
 - [DocumentClassifier](https://github.com/toddkramer/DocumentClassifier)
