@@ -5,7 +5,7 @@ An application that allows easier and more efficient note taking by:
 - ability to add articles and fully interpret through sentiment analysis and subject classification
 - having a capability to summarize text for article and note summaries
 
-Article Summary for [this](https://www.nytimes.com/2018/07/14/world/europe/uk-trump-scotland-golf.html?action=click&module=TrendingGrid&region=TrendingTop&pgtype=collection) NYTimes article:
+Article Summary for [this NYTimes article](https://www.nytimes.com/2018/07/14/world/europe/uk-trump-scotland-golf.html?action=click&module=TrendingGrid&region=TrendingTop&pgtype=collection):
 
 <img src="SummaryOfArticle.png" width="300">
 
@@ -14,6 +14,14 @@ Article Summary for [this](https://www.nytimes.com/2018/07/14/world/europe/uk-tr
 Scikit-Learn's [Pipeline](http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html) was created using a [Dict Vectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.DictVectorizer.html) and a [Linear SVM](http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html) and was then converted into the [CoreML Model](https://developer.apple.com/documentation/coreml) using the [coremltools](https://developer.apple.com/documentation/coreml/converting_trained_models_to_core_ml) python package. This classifier was used to distinguish between positive and negative phrases with the **best test score = 0.841726618705036** and was trained with the [Epinions](http://boston.lti.cs.cmu.edu/classes/95-865-K/HW/HW3/) set.
 
 ### Running the Model
+
+To run the model, several python libraries must be installed
+- 
+Then, the following code can be run:
+```
+cd SentimentPolarity
+python sentiment.py
+```
 
 ### Features
 
