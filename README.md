@@ -5,9 +5,9 @@ An application that allows easier and more efficient note taking by:
 - ability to add articles and fully interpret through sentiment analysis and subject classification
 - having a capability to summarize text for article and note summaries
 
-<p align="center >
-<img align="right" src="SummaryOfArticle.png" width="300">
-</p>                                                           
+<p align="center">
+  <img width="460" height="300" src="SummaryOfArticle.png">
+</p>
 
 ## Model
 
