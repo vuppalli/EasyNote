@@ -9,6 +9,10 @@ Article Summary for [this NYTimes article](https://www.nytimes.com/2018/07/14/wo
 
 <img src="SummaryOfArticle.png" width="300">
 
+## Requirements
+
+Xcode 10 and iOS 11
+
 ## Model
 
 Scikit-Learn's [Pipeline](http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html) was created using a [Dict Vectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.DictVectorizer.html) and a [Linear SVM](http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html) and was then converted into the [CoreML Model](https://developer.apple.com/documentation/coreml) using the [coremltools](https://developer.apple.com/documentation/coreml/converting_trained_models_to_core_ml) python package. This classifier was used to distinguish between positive and negative phrases with the **best test score = 0.841726618705036** and was trained with the [Epinions](http://boston.lti.cs.cmu.edu/classes/95-865-K/HW/HW3/) set.
@@ -35,10 +39,6 @@ python sentiment.py
 ## Summarizer
 
 ### Usage
-
-## Requirements
-
-Xcode 10 and iOS 11
 
 ## Installation
 ```
