@@ -11,13 +11,29 @@ Article Summary for [this](https://www.nytimes.com/2018/07/14/world/europe/uk-tr
 
 ## Model
 
-### Summarizer
+### Features
+
+## Summarizer
+
+### Usage
 
 ## Requirements
 
-## Installation
+Xcode 10 and iOS 11
 
+## Installation
+```
+git clone https://github.com/cocoa-ai/College-NoteTaker.git
+cd College-NoteTaker
+open College-NoteTaker.xcworkspace/
+```
 ## Built With
+- [Firebase](https://firebase.google.com/)
+- [SiriKit](https://developer.apple.com/sirikit/)
+- [CoreML Framework](https://developer.apple.com/sirikit/)
+- [Scikit-Learn](http://scikit-learn.org/stable/)
+- [SwiftSoup](https://github.com/scinfu/SwiftSoup)
+- [DocumentClassifier](https://github.com/toddkramer/DocumentClassifier)
 
 ## Creator
 
