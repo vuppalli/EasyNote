@@ -5,7 +5,7 @@ An application that allows easier and more efficient note taking by:
 - ability to add articles and fully interpret through ***sentiment analysis*** and ***subject classification***
 - having a capability to ***summarize*** text for article and note summaries
 
-Article Summary for [this NYTimes article](https://www.nytimes.com/2018/07/14/world/europe/uk-trump-scotland-golf.html?action=click&module=TrendingGrid&region=TrendingTop&pgtype=collection):
+Article Analysis for [this NYTimes article](https://www.nytimes.com/2018/07/14/world/europe/uk-trump-scotland-golf.html?action=click&module=TrendingGrid&region=TrendingTop&pgtype=collection):
 
 <img src="SummaryOfArticle.png" width="300">
 
@@ -38,7 +38,17 @@ python sentiment.py
 
 ## Summarizer
 
+Created using the steps outlined by [DEV](https://dev.to/davidisrawi/build-a-quick-summarizer-with-python-and-nltk). The process involves using Apple's [Natural Language Framework](https://developer.apple.com/documentation/naturallanguage) to tokenize words, identify languages, and use tag schemes.
+
 ### Usage
+
+To use the summarizer alone, copy ```summarizer.swift``` into your project. 
+
+```
+let summarizer = Summarizer()
+let text = "Article's Text"
+let summarizedContent = summarizer.summarize(text: text)
+```
 
 ## Installation
 ```
