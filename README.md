@@ -47,10 +47,19 @@ To use the summarizer alone, copy ```summarizer.swift``` into your project.
 ```
 let summarizer = Summarizer()
 let text = "Article's Text"
-let summarizedContent = summarizer.summarize(text: text)
+let summary = summarizer.summarize(text: text)
+```
+The variable ```summaryIntensity``` can be altered for favored summary length. 
+
+### Example
+
+This [NYTimes article](https://www.nytimes.com/2018/07/14/world/europe/uk-trump-scotland-golf.html?action=click&module=TrendingGrid&region=TrendingTop&pgtype=collection) is summarized as:
+
+```
+Trump’s preferred pastime — the president managed repeatedly to plug Turnberry, one of two Scottish resorts that bear his name, as he dealt with some of the most pressing diplomatic problems facing his administration to date.  It is a tactic that has alarmed ethics watchdogs, who say he is using his presidential platform to promote a resort that, according to financial filings, has been a burden on the family business.  He also plugged the Turnberry golf course again: “The weather is beautiful,” he wrote on Twitter, “and this place is incredible!” Ethics experts tend to be cynical about the president’s sentimental references to his resort.  Trump’s visits to properties owned, managed or branded by the Trump Organization amount to free publicity for the company and blur the line between his family business and presidential duties.  Trump appears to hold a special place in his heart for Turnberry, perhaps because of his love of golf and because his mother, Mary Anne MacLeod Trump, was born in Tong, a village some 300 miles from Turnberry, in the north of Scotland “I feel very comfortable here,” Mr.  Eisen said, “the president is forcing his foreign hosts and the United States to spend enormous amounts of money so that he can get free advertising for his resort.  politics politics New York business tech science sports obituaries today's paper corrections corrections opinion today's opinion today's opinion op-ed columnists editorials editorials contributing writers op-ed Contributors letters letters sunday review sunday review taking note video: opinion arts today's arts art & design books dance movies music television theater video: arts living automobiles automobiles crossword food food education fashion & style health jobs magazine real estate t magazine travel weddings listings & more Reader Center tools & services N.  politics politics New York business tech science sports obituaries today's paper corrections corrections opinion today's opinion today's opinion op-ed columnists editorials editorials contributing writers op-ed Contributors letters letters sunday review sunday review taking note video: opinion arts today's arts art & design books dance movies music television theater video: arts living automobiles automobiles crossword food food education fashion & style health jobs magazine real estate t magazine travel weddings more Reader Center tools & services.
 ```
 
-## Installation
+## App Installation
 ```
 git clone https://github.com/cocoa-ai/College-NoteTaker.git
 cd College-NoteTaker
