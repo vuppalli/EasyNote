@@ -15,7 +15,7 @@ Xcode 10 and iOS 11
 
 ## Model
 
-Scikit-Learn's [Pipeline](http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html) was created using a [Dict Vectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.DictVectorizer.html) and a [Linear SVM](http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html) and was then converted into the [CoreML Model](https://developer.apple.com/documentation/coreml) using the [coremltools](https://developer.apple.com/documentation/coreml/converting_trained_models_to_core_ml) python package. This classifier was used to distinguish between positive and negative phrases with the **best test score = 0.841726618705036** and was trained with the [Epinions](http://boston.lti.cs.cmu.edu/classes/95-865-K/HW/HW3/) set.
+Scikit-Learn's [Pipeline](http://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html) was created using a [Dict Vectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.DictVectorizer.html) and a [Linear SVM](http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html) and was then converted into the [CoreML Model](https://developer.apple.com/documentation/coreml) using the [coremltools](https://developer.apple.com/documentation/coreml/converting_trained_models_to_core_ml) python package. This classifier was used to distinguish between positive and negative phrases with the **best test score = 0.841726618705036** and was trained with the [Pang and Lee's Movie Review](http://boston.lti.cs.cmu.edu/classes/95-865-K/HW/HW3/) dataset.
 
 ### Running and Converting the Model 
 
@@ -28,7 +28,7 @@ To run the model, python and pip should already be installed, inlcuding several 
 Then, the following code can be run:
 ```
 cd SentimentPolarity
-python sentiment.py
+python sentAnalysis.py
 ```
 
 ### Features
