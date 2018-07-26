@@ -79,4 +79,4 @@ open College-NoteTaker.xcworkspace/
 
 ## Note
 
-The application can be useful in several settings such as real-time transciption of a professor, or reading a textbook out loud for studying purposes. Furthermore, the app can be used in meetings as a final summarizer for everything that was spoken.
+The application can be useful in several settings such as real-time transciption of a professor, or reading a textbook out loud for studying purposes. Furthermore, the app can be scaled to use in meetings as a final summarizer for everything that was spoken.
